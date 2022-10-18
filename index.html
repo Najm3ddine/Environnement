@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr_CA">
+<head>
+    <!-- meta -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Cours 12 | Validation native | Formulaires</title>
+	<meta name="description" content="Cours 12 du cours 582-21F-MA Programmation d'interface Web 1 : Formulaires">
+
+	<!-- styles -->
+	<link rel="stylesheet" type="text/css" href="../styles/styles.css">
+</head>
+
+<body>
+	<header>
+		<h1>Cours 12 - Validation native</h1>
+	</header>
+
+	<main>
+	   
+		<form>
+
+			<div>
+				<label for="text">Input text :</label>
+				<input type="text" id="text" name="text" required>
+			</div>
+
+
+			<div>
+				<label for="number">Input number :</label>
+				<input type="number" id="number" name="number" required>
+			</div>
+
+
+			<div>
+				<label for="email">Input email :</label>
+				<input type="email" id="email" name="email" required>
+			</div>
+
+
+			<div>
+				<label for="password">Input password :</label>
+				<input type="password" id="password" name="password" required>
+			</div>
+			
+
+			<div>
+				<label for="tel">Input tel :</label>
+				<input type="tel" 
+					id="tel"
+					name="tel"
+					placeholder="123-456-7890"
+					required
+				>
+			</div>
+			
+
+			<div>
+				<label for="url">Input url :</label>
+				<input type="url" id="url" name="url" required>
+			</div>
+
+
+			<div>
+				<label for="date">Input date :</label>
+				<input type="date" id="date" name="date" required>
+			</div>
+
+
+			<div>
+				<label for="range">Input range :</label>
+				<input type="range" id="range" name="range" min="0" max="5" required>
+			</div>
+
+
+			<div>
+				<label for="color">Input color :</label>
+				<input type="color" id="color" name="color" required>
+			</div>
+
+
+			<div>
+				<label for="textarea">Textarea :</label>
+				<textarea id="textarea" name="textarea" rows="4" required></textarea>
+			</div>
+
+
+			<div>
+				<h4>Choisir une couleur (inputs radio)</h4>
+				<input type="radio" id="radio-bleu" name="radio-couleur" value="radio-bleu" required>
+				<label for="radio-bleu">Bleu</label><br>
+				<input type="radio" id="radio-blanc" name="radio-couleur" value="radio-blanc">
+				<label for="radio-blanc">Blanc</label><br>
+				<input type="radio" id="radio-rouge" name="radio-couleur" value="radio-rouge">
+				<label for="radio-rouge">Rouge</label>
+			</div>
+		
+
+
+			<!-- HTML5 ne permet pas de valider l'attribut required des checkbox -->
+			<div>
+				<h4>Choisir une ou des couleur(s) (inputs checkbox)</h4>
+				<input type="checkbox" id="checkbox-bleu" name="checkbox-couleur" value="checkbox-bleu">
+				<label for="checkbox-bleu">Bleu</label><br>
+				<input type="checkbox" id="checkbox-blanc" name="checkbox-couleur" value="checkbox-blanc">
+				<label for="checkbox-blanc">Blanc</label><br>
+				<input type="checkbox" id="checkbox-rouge" name="checkbox-couleur" value="checkbox-rouge">
+				<label for="checkbox-rouge">Rouge</label>
+			</div>
+		
+			
+            <div>
+				<h4>Choisir une couleur (select)</h4>
+                <select name="select" required>
+					<option value="">Option sans valeur</option>
+					<option value="select-bleu">Bleu</option>
+					<option value="select-blanc">Blanc</option>
+					<option value="select-rouge">Rouge</option>
+                </select>
+			</div>
+			
+
+			<div>
+				<h4>Choisir une ou des couleur(s) (select multiple)</h4>
+                <select name="select-multiple" multiple="multiple" required>
+					<option value="">Option sans valeur</option>
+					<option value="select-multiple-bleu">Bleu</option>
+					<option value="select-multiple-blanc">Blanc</option>
+					<option value="select-multiple-rouge">Rouge</option>
+                </select>
+            </div>
+
+
+			<div>
+				<input type="reset" id="reset" name="reset">
+			</div>
+
+
+			<div>
+				<button>Soumettre</button>
+			</div>
+
+		</form>
+    </main>
+</body>
+</html>
